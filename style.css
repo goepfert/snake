@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+  --boardBackground: Silver;
+  --boardWidth: 500;
+  --boardHeight: 500;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lobster', cursive;
+  background-color: Linen;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 10px;
+}
+
+#board {
+  border: 3px solid #000000;
+  background-color: var(--boardBackground);
+  width: var(--boardWidth);
+  height: var(--boardHeight);
+}
+
+.score {
+  font-family: 'Permanent marker', cursive;
+  font-size: 50px;
+}
+
+.resetBtn {
+  background-color: var(--boardBackground);
+  font-family: 'Permanent marker', cursive;
+  font-size: 22px;
+  width: 100px;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.resetBtn.disabled {
+  pointer-events: none; /* Disable an element interaction, so it will not respond any event */
+  color: #666666;
+}

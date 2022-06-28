@@ -23,7 +23,7 @@ let foodX;
 let foodY;
 let score = 0;
 let snake = [];
-let wrap = true;
+let wrap = true; // wrap the snake at the border
 
 /**
  * Setup the game
@@ -98,7 +98,6 @@ const moveSnake = () => {
   }
 
   const newHead = { x: newX, y: newY };
-
   snake.unshift(newHead);
 
   // jummy or not

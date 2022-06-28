@@ -56,3 +56,12 @@ h1 {
   pointer-events: none; /* Disable an element interaction, so it will not respond any event */
   color: #666666;
 }
+
+.footer {
+  font-family: 'Permanent marker', cursive;
+  position: absolute; 
+  bottom: 5px; 
+  text-align: right; 
+  width: 100%;
+  max-width: 960px;
+}
